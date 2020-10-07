@@ -35,7 +35,7 @@ const adjectives = [
   'timely',
   'toasty',
   'violet',
-  'yellow',
+  'yellow'
 ]
 const nouns = [
   'apple',
@@ -71,7 +71,7 @@ const nouns = [
   'timeline',
   'visibility',
   'watermelon',
-  'waypoint',
+  'waypoint'
 ]
 
 const haikunator = new Haikunator({
