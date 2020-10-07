@@ -4,8 +4,75 @@
 const args = require('get-them-args')(process.argv.slice(2))
 const Haikunator = require('haikunator')
 
-const adjectives = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'clean', 'safe', 'respectful', 'punctual', 'enjoyable', 'favorite']
-const nouns = ['apple', 'avocado', 'lemon', 'lime', 'orange', 'watermelon', 'carpool', 'cancellation', 'detour', 'noshow', 'rider', 'driver', 'waypoint', 'satisfaction', 'reliability', 'visibility', 'impact', 'favorite', 'itinerary', 'timeline', 'reimbursement', 'credit']
+// Alphabetized
+const adjectives = [
+  'blue',
+  'bucolic',
+  'clean',
+  'communicative',
+  'considerate',
+  'educational',
+  'effective',
+  'enjoyable',
+  'good',
+  'green',
+  'immaculate',
+  'indigo',
+  'orange',
+  'protective',
+  'punctual',
+  'favorite',
+  'festive',
+  'fresh',
+  'fuzzy',
+  'red',
+  'respectful',
+  'safe',
+  'sanguine',
+  'secular',
+  'stellar',
+  'super',
+  'timely',
+  'toasty',
+  'violet',
+  'yellow'
+]
+const nouns = [
+  'apple',
+  'avocado',
+  'bread',
+  'cactus',
+  'carpool',
+  'cancellation',
+  'chocolate',
+  'coffee',
+  'credit',
+  'croissant',
+  'dachshund',
+  'detour',
+  'driver',
+  'favorite',
+  'impact',
+  'itinerary',
+  'lane',
+  'lemon',
+  'lime',
+  'noshow',
+  'orange',
+  'parking',
+  'pug',
+  'push',
+  'reimbursement',
+  'reliability',
+  'rider',
+  'sandwich',
+  'satisfaction',
+  'scone',
+  'timeline',
+  'visibility',
+  'watermelon',
+  'waypoint'
+]
 
 const haikunator = new Haikunator({
   adjectives: args.adjectives ? args.adjectives.split(',') : adjectives,
